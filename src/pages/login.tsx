@@ -2,10 +2,12 @@ import React from "react";
 import { Input } from "@nextui-org/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-const login = () => {
+import Link from "next/link";
+
+const Login: React.FC = () => {
   return (
     <div
-      id="conatiner"
+      id="container"
       className="w-full h-screen flex font-monstreat md:bg-login bg-contain bg-no-repeat md:justify-end"
     >
       <div
@@ -54,9 +56,12 @@ const login = () => {
           <div className="md:text-[15px] text-[12px] w-full flex justify-center text-[#9a9a9a]">
             <p>
               Forgot Password{" "}
-              <button className=" underline font-[600] text-[#110011]">
+              <Link
+                href={"/forgotPassword"}
+                className=" underline font-[600] text-[#110011]"
+              >
                 Click here
-              </button>
+              </Link>
             </p>
           </div>
         </form>
@@ -65,4 +70,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

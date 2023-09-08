@@ -18,7 +18,8 @@ module.exports = {
       backgroundImage: {
         login:
           "url('https://res.cloudinary.com/du19shvhf/image/upload/v1694093612/ckgyufwjcdxmvr1rposx.jpg')",
-          
+        forgotPassword:
+          "url('https://res.cloudinary.com/du19shvhf/image/upload/v1694150314/yveiaacrexjyuev3do7u.jpg')",
       },
     },
   },
