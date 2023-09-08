@@ -1,5 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineCompress } from "react-icons/ai";
+import { VscOrganization } from "react-icons/vsc";
 import { SiCampaignmonitor } from "react-icons/si";
 import { FaUsers } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ const Header = () => {
         className="w-2/4 flex items-center justify-evenly  lg:text-[19px]"
       >
         <button className="flex items-center  ">
-          <AiOutlineCompress className="mx-2 font-[700] text-[18px]" />
+          <VscOrganization className="mx-2 font-[700] text-[18px]" />
           <span>Companies</span>
         </button>
         <button className="flex items-center  ">

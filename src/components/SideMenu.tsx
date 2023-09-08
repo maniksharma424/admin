@@ -30,7 +30,7 @@ const SideMenu = ({ handleSideBar }: { handleSideBar: () => void }) => {
           width={100}
           height={100}
           src={
-            "https://vakilsearch.com/blog/wp-content/uploads/2022/05/colors-in-logo.jpg"
+            "https://res.cloudinary.com/du19shvhf/image/upload/v1694167069/e1kft6m8winwfncxemvq.jpg"
           }
         />
       </div>

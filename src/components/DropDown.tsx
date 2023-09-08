@@ -7,6 +7,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { FaUser } from "react-icons/fa";
+import Link from "next/link";
 
 export default function DropDown() {
   return (
@@ -17,8 +18,15 @@ export default function DropDown() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
-        <DropdownItem key="new">Name</DropdownItem>
-        <DropdownItem key="copy">Logout</DropdownItem>
+        <DropdownItem key="new">
+          <Link href={"/profile"} className="w-full h-full">
+            Ayappa Nagubandi
+          </Link>
+        </DropdownItem>
+        
+        <DropdownItem key="copy">
+          <Link href={"/login"}>Logout</Link>
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

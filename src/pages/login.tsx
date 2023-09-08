@@ -32,6 +32,7 @@ const Login: React.FC = () => {
           className="w-full h-1/2 flex flex-col justify-around "
         >
           <Input
+          isRequired
             size="md"
             type="email"
             variant={"underlined"}
@@ -39,6 +40,7 @@ const Login: React.FC = () => {
             placeholder="Enter your email"
           />
           <Input
+          isRequired
             size="md"
             type="password"
             variant={"underlined"}

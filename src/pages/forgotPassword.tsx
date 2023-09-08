@@ -49,6 +49,7 @@ const forgotPassword: React.FC = () => {
           className="w-full h-1/2 flex flex-col justify-around "
         >
           <Input
+            isRequired
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);

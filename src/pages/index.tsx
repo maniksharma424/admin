@@ -33,13 +33,13 @@ export default function Home() {
           </Link>
           <Link
             className="px-4 py-2 border-[1px] border-black rounded-lg shadow-md"
-            href={"/Login"}
+            href={"/forgotPassword"}
           >
             Forgot Password
           </Link>
           <Link
             className="px-4 py-2 border-[1px] border-black rounded-lg shadow-md"
-            href={"/Login"}
+            href={"/profile"}
           >
             Profile Page
           </Link>
