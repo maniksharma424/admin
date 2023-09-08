@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from "framer-motion";
-const SideMenu = ({ handleSideBar }) => {
+const SideMenu = ({ handleSideBar }: { handleSideBar: () => void }) => {
   return (
     <motion.div
       initial={{ x: -300 }}
