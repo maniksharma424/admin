@@ -33,6 +33,7 @@ const forgotPassword: React.FC = () => {
       >
         <div className="w-full h-1/4 flex  justify-center items-center ">
           <Image
+            priority
             alt="logo"
             width={250}
             height={250}

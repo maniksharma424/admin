@@ -1,10 +1,16 @@
 import React from "react";
 import { Input } from "@nextui-org/react";
-
+import { useState } from "react";
 import { motion } from "framer-motion";
+import SideMenu from "@/components/SideMenu";
 const Profile: React.FC = () => {
+  const [showSidebar, setShowSidebar] = useState<Boolean>(true);
+  const handleSideBar = () => {
+    setShowSidebar((n) => !n);
+  };
   return (
     <div className="w-full h-screen flex justify-center items-center">
+      {showSidebar ? <SideMenu handleSideBar={handleSideBar} /> : null}
       <div
         id="Profile-container"
         className="md:w-2/5 w-full h-3/5  md:p-0 p-10 "

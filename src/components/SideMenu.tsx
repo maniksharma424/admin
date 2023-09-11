@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { motion } from "framer-motion";
+import { Accordion, AccordionItem } from "@nextui-org/react";
 const SideMenu = ({ handleSideBar }: { handleSideBar: () => void }) => {
   return (
     <motion.div
@@ -26,6 +27,7 @@ const SideMenu = ({ handleSideBar }: { handleSideBar: () => void }) => {
         className="w-full h-fit py-4 flex justify-center items-center"
       >
         <Image
+        priority
           alt="logo"
           width={100}
           height={100}
@@ -38,6 +40,15 @@ const SideMenu = ({ handleSideBar }: { handleSideBar: () => void }) => {
         id="links"
         className="w-full h-1/2   justify-around items-start flex flex-col pl-7 font-[400]"
       >
+        {/* <Accordion>
+          <AccordionItem
+            className="text-white"
+            key="1"
+            aria-label="Accordion 1"
+            title="Accordion 1"
+          ></AccordionItem>
+        </Accordion> */}
+
         <button className="font-[700]">Dashboard</button>
         <button>Companies</button>
         <button>Campaigns</button>

@@ -16,6 +16,7 @@ const Login: React.FC = () => {
       >
         <div className="w-full h-1/4 flex  justify-center items-center ">
           <Image
+          priority
             alt="logo"
             width={250}
             height={250}
@@ -32,7 +33,7 @@ const Login: React.FC = () => {
           className="w-full h-1/2 flex flex-col justify-around "
         >
           <Input
-          isRequired
+            isRequired
             size="md"
             type="email"
             variant={"underlined"}
@@ -40,21 +41,23 @@ const Login: React.FC = () => {
             placeholder="Enter your email"
           />
           <Input
-          isRequired
+            isRequired
             size="md"
             type="password"
             variant={"underlined"}
             label="Password"
             placeholder="Enter your Password"
           />
-          <motion.button
-            whileTap={{
-              scale: 0.8,
-            }}
-            className="border-[1px] border-black w-full bg-[#110011] text-white font-[400] md:text-[15px] py-2 rounded-md"
-          >
-            Login Now
-          </motion.button>
+          <Link href={"/dashboard"}>
+            <motion.button
+              whileTap={{
+                scale: 0.8,
+              }}
+              className="border-[1px] border-black w-full bg-[#110011] text-white font-[400] md:text-[15px] py-2 rounded-md"
+            >
+              Login Now
+            </motion.button>
+          </Link>
           <div className="md:text-[15px] text-[12px] w-full flex justify-center text-[#9a9a9a]">
             <p>
               Forgot Password{" "}
